@@ -1,0 +1,23 @@
+//1
+nu se va afisa nimic pentru ca name e definita local, nu este vazuta la nivel global
+
+//2
+se foloseste o functie anonima, s-a asignat o functie fara nume unei variabile -> deci fisrtFn nu e o functie -> TypeError
+
+o varianta:
+firstFn();
+function firstFn () {
+   var localToFirstFn = 'inner';
+   // console.log(localToFirstFn); // o sa afiseze 'inner'
+  };
+
+//3
+se va afisa outer
+
+//4
+11
+12
+
+//5
+se va exacuta a doua functie (adica se va afisa Expression) pentru ca se foloseste hoisting si mai intai se verifica ce variabile au fost declarate in program
+daca s-ar fi apelat la inceput, s-ar fi afisat Actual
